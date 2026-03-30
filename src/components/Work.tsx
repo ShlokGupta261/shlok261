@@ -3,13 +3,15 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 const projects = [
   {
     title: "AI Detection Engineering Program",
     category: "SOC Modernization / CyForte.ai",
     tools:
       "CrowdStrike, Splunk, Correlation Rules, AI triage workflows, NIST CSF mapping",
-    image: "/images/sapphire.png",
+    image: asset("images/sapphire.png"),
     link: "https://www.linkedin.com/in/shlokgupta261",
   },
   {
@@ -17,7 +19,7 @@ const projects = [
     category: "Security Controls Intelligence / CSG",
     tools:
       "Python, Control testing workflows, CI/CD checks, Audit evidence tracking",
-    image: "/images/Solidx.png",
+    image: asset("images/Solidx.png"),
     link: "https://www.linkedin.com/in/shlokgupta261",
   },
   {
@@ -25,7 +27,7 @@ const projects = [
     category: "Cloud Attack-Path Reduction",
     tools:
       "STRIDE, MITRE ATT&CK, Risk prioritization, Remediation roadmaps",
-    image: "/images/radix.png",
+    image: asset("images/radix.png"),
     link: "https://www.linkedin.com/in/shlokgupta261",
   },
   {
@@ -33,7 +35,7 @@ const projects = [
     category: "OWASP Security Validation / SAFE Security",
     tools:
       "Burp Suite, OWASP Top 10 testing, Findings triage, Control remediation support",
-    image: "/images/bond.png",
+    image: asset("images/bond.png"),
     link: "https://www.linkedin.com/in/shlokgupta261",
   },
 ];
